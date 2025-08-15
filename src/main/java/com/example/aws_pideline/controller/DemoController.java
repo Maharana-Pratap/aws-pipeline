@@ -15,7 +15,7 @@ public class DemoController {
     @Autowired
     private DemoService demoService;
 
-    @GetMapping("")
+    @GetMapping("/")
     public String welcome() {
         return "Welcome Maharana:";
     }
