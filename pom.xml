@@ -74,6 +74,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+        <finalName>demo-service</finalName>
 	</build>
-
 </project>
