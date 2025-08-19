@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
-@RequestMapping
+@RequestMapping("/demo-test")
 public class DemoController {
 
     @Autowired
@@ -22,5 +24,10 @@ public class DemoController {
     @GetMapping("/{name}")
     public ResponseEntity<?> hello(@PathVariable String name) {
         return ResponseEntity.ok(demoService.sayHello(name));
+    }
+
+    @GetMapping("/names")
+    public List<String> getEmpNames() {
+        return List.of("maharana","priyanka","kittu");
     }
 }
