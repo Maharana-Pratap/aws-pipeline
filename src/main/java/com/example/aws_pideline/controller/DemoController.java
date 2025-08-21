@@ -28,6 +28,6 @@ public class DemoController {
 
     @GetMapping("/names")
     public List<String> getEmpNames() {
-        return List.of("maharana","priyanka","kittu");
+        return List.of("maharana","priyanka","kittu","paro");
     }
 }
